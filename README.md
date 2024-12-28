@@ -45,3 +45,4 @@ The Password Generator Extension is a sleek, advanced tool designed to create se
 - Stores recent passwords for your convenience  
 
 ## Showcase
+![image](https://github.com/user-attachments/assets/29d6f1bf-92ec-4f41-99f2-c216daa83c47)
