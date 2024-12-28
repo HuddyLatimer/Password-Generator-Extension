@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="tabs">
+      <button id="generateTab" class="tab active">Generate</button>
+      <button id="recentTab" class="tab">Recent</button>
+    </div>
+
+    <div id="generateSection" class="tab-content">
+      <label>
+        Length:
+        <input type="number" id="lengthInput" min="6" max="32" value="12">
+      </label>
+      <label>
+        <input type="checkbox" id="includeUppercase" checked> Uppercase
+      </label>
+      <label>
+        <input type="checkbox" id="includeLowercase" checked> Lowercase
+      </label>
+      <label>
+        <input type="checkbox" id="includeNumbers" checked> Numbers
+      </label>
+      <label>
+        <input type="checkbox" id="includeSymbols"> Symbols
+      </label>
+      <button id="generateBtn">Generate Password</button>
+      <div id="result">
+        <span id="passwordDisplay"></span>
+        <button id="copyBtn">Copy</button>
+      </div>
+    </div>
+
+    <div id="recentSection" class="tab-content hidden">
+      <ul id="recentPasswords"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
